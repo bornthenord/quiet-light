@@ -1,0 +1,149 @@
+# -----------------------------------------------------------------------------
+# Quiet Light
+# Based on the VS Code Quiet Light color scheme
+# Adapted from a Ghostty terminal theme
+# -----------------------------------------------------------------------------
+
+# Main colors
+foreground: &purple "#705697"
+background: &lightGray "#F5F5F5"
+selection: &white "#FFFFFF"
+
+# ANSI palette
+black: &black "#000000"
+red: &darkRed "#AA3731"
+green: &green "#448C27"
+yellow: &yellow "#DAAA01"
+blue: &purpleBlue "#705697"
+magenta: &greenMagenta "#448C27"
+cyan: &purpleCyan "#705697"
+gray: &gray "#666666"
+
+# Bright ANSI palette
+brightRed: &brightRed "#CD3131"
+brightGreen: &lightGreen "#70A55B"
+brightGray: &mediumGray "#777777"
+
+k9s:
+  body:
+    fgColor: *purple
+    bgColor: *lightGray
+    logoColor: *purpleBlue
+    logoColorMsg: *green
+    logoColorInfo: *purpleCyan
+    logoColorWarn: *yellow
+    logoColorError: *darkRed
+
+  prompt:
+    fgColor: *purple
+    bgColor: *lightGray
+    suggestColor: *purpleBlue
+
+  info:
+    fgColor: *purple
+    sectionColor: *greenMagenta
+
+  help:
+    fgColor: *purple
+    bgColor: *lightGray
+    keyColor: *purpleBlue
+    numKeyColor: *greenMagenta
+    sectionColor: *purpleCyan
+
+  dialog:
+    fgColor: *purple
+    bgColor: *lightGray
+    buttonFgColor: *lightGray
+    buttonBgColor: *purpleBlue
+    buttonFocusFgColor: *lightGray
+    buttonFocusBgColor: *greenMagenta
+    labelFgColor: *purpleBlue
+    fieldFgColor: *purple
+
+  frame:
+    border:
+      fgColor: *white
+      focusColor: *purple
+
+    menu:
+      fgColor: *purple
+      fgStyle: normal
+      keyColor: *purpleBlue
+      numKeyColor: *greenMagenta
+
+    crumbs:
+      fgColor: *lightGray
+      bgColor: *purpleBlue
+      activeColor: *yellow
+
+    status:
+      newColor: *purpleCyan
+      modifyColor: *purpleBlue
+      addColor: *green
+      errorColor: *darkRed
+      highlightColor: *greenMagenta
+      killColor: *gray
+      completedColor: *mediumGray
+
+    title:
+      fgColor: *purple
+      bgColor: *lightGray
+      highlightColor: *purpleBlue
+      counterColor: *greenMagenta
+      filterColor: *purpleCyan
+
+  views:
+    charts:
+      bgColor: *lightGray
+
+      defaultDialColors:
+        - *purpleBlue
+        - *greenMagenta
+        - *purpleCyan
+        - *green
+        - *yellow
+        - *darkRed
+
+      defaultChartColors:
+        - *purpleBlue
+        - *greenMagenta
+        - *purpleCyan
+        - *green
+        - *yellow
+        - *darkRed
+
+    table:
+      fgColor: *purple
+      bgColor: *lightGray
+      cursorFgColor: *lightGray
+      cursorBgColor: *purpleBlue
+      markColor: *yellow
+
+      header:
+        fgColor: *purple
+        bgColor: *lightGray
+        sorterColor: *purpleBlue
+        selectedSortColumnColor: *greenMagenta
+
+    xray:
+      fgColor: *purple
+      bgColor: *lightGray
+      cursorColor: *purpleBlue
+      cursorTextColor: *lightGray
+      graphicColor: *purpleCyan
+
+    yaml:
+      keyColor: *greenMagenta
+      colonColor: *purpleBlue
+      valueColor: *purple
+
+    logs:
+      fgColor: *purple
+      bgColor: *lightGray
+
+      indicator:
+        fgColor: *purple
+        bgColor: *white
+        toggleOnColor: *green
+        toggleOffColor: *gray
+
